@@ -1,0 +1,23 @@
+[project]
+name = "ctf-writeup-collection"
+version = "0.1.0"
+description = "Template and index generator for a personal CTF/TryHackMe writeup collection."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "T-X" }]
+dependencies = []
+
+[project.scripts]
+ctf-build-index = "build_index:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["build_index"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
